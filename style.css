@@ -1,0 +1,169 @@
+:root {
+  --soft-green: #a8d5ba;
+  --pale-blue: #cfe9f1;
+  --forest-green: #2c5f4a;
+  --light-sand: #f4f1ed;
+  --seafoam-teal: #57a6a1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--light-sand);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--pale-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.2rem 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+header:hover {
+  background-color: #e0f3f7;
+}
+
+.logo {
+  font-size: 2rem;
+  font-family: 'Raleway', sans-serif;
+  color: var(--forest-green);
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  color: var(--seafoam-teal);
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  display: inline-block;
+  margin: 0.5rem 1rem;
+  text-decoration: none;
+  color: var(--seafoam-teal);
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+  color: var(--forest-green);
+  transform: scale(1.05);
+}
+
+.hero {
+  background-color: var(--soft-green);
+  text-align: center;
+  padding: 5rem 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.hero:hover {
+  background-color: #bde4ca;
+}
+
+.hero h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.4rem;
+  color: var(--forest-green);
+  margin-bottom: 1.2rem;
+}
+
+.hero p {
+  font-size: 1.15rem;
+  color: #333;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.about {
+  padding: 3.5rem 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
+  color: var(--forest-green);
+  margin-bottom: 1rem;
+}
+
+.about p {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.cta {
+  background-color: var(--pale-blue);
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+
+.cta p {
+  font-size: 1.25rem;
+  color: #2c5f4a;
+  margin-bottom: 1.5rem;
+}
+
+.cta button {
+  background-color: var(--seafoam-teal);
+  color: white;
+  border: none;
+  padding: 0.9rem 1.6rem;
+  font-size: 1rem;
+  font-family: 'Raleway', sans-serif;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta button:hover {
+  background-color: var(--forest-green);
+  transform: scale(1.05);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 600px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  nav {
+    margin-top: 0;
+  }
+
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero p {
+    font-size: 1.25rem;
+  }
+
+  .about h2 {
+    font-size: 2.2rem;
+  }
+
+  .about p {
+    font-size: 1.2rem;
+  }
+}
